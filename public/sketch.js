@@ -29,6 +29,7 @@ function updatePlayers(serverPlayers) {
 function playerExists(playerFromServer) {
   for (let i = 0; i < players.length; i++) {
     if (players[i].id === playerFromServer) {
+      players[i].update();
       return true;
     }
   }
