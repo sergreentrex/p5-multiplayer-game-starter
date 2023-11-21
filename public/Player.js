@@ -1,7 +1,6 @@
 class Player {
   constructor(player) {
-    this.x = player.x;
-    this.y = player.y;
+    this.pos = createVector(player.x,player.y)
     this.id = player.id;
     this.rgb = player.rgb;
   }
@@ -9,21 +8,21 @@ class Player {
 
   draw() {
     fill(this.rgb.r, this.rgb.g, this.rgb.b);
-    circle(this.x, this.y, 20);
+    circle(this.pos.x, this.pos.y, 20);
   }
   update(){
     background(220)
     if(keyIsDown(87)){
-      this.y--;
+      this.pos.y--;
     }
     if(keyIsDown(83)){
-      this.y++;
+      this.pos.y++;
     }
     if(keyIsDown(65)){
-      this.x--;
+      this.pos.x--;
     }
     if(keyIsDown(68)){
-      this.x++;
+      this.pos.x++;
     }
     this.rgb.r++;
     if(playerExists(this)){
