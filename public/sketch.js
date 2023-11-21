@@ -15,6 +15,7 @@ function draw() {
       players[i].update();
     }
   }
+  socket.emit("hello");
 }
 
 function updatePlayers(serverPlayers) {
