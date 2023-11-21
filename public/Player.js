@@ -26,7 +26,7 @@ class Player {
     }
     this.rgb.r++;
     if(playerExists(this)){
-      player = new Player(this.id)
+      this.draw()
     }
   }
 
