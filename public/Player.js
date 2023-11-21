@@ -15,6 +15,7 @@ class Player {
     if(keyIsDown(87)){
       this.x++;
     }
+    this.draw()
   }
 
 }
