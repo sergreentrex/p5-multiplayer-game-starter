@@ -13,6 +13,15 @@ class Player {
   }
   update(){
     if(keyIsDown(87)){
+      this.y--;
+    }
+    if(keyIsDown(83)){
+      this.y++;
+    }
+    if(keyIsDown(65)){
+      this.x--;
+    }
+    if(keyIsDown(68)){
       this.x++;
     }
     this.rgb.r++;
