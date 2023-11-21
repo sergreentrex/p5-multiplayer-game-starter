@@ -9,7 +9,7 @@ function setup() {
 
 function draw() {
   background(220);
-  console.log("hi");
+  players.forEach(player => player.draw());
   players.forEach(player => player.update());
 }
 
@@ -29,7 +29,6 @@ function updatePlayers(serverPlayers) {
 function playerExists(playerFromServer) {
   for (let i = 0; i < players.length; i++) {
     if (players[i].id === playerFromServer) {
-      players[i].update();
       return true;
     }
   }
