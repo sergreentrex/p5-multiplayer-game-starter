@@ -25,7 +25,9 @@ class Player {
       this.x++;
     }
     this.rgb.r++;
-    this.draw()
+    if(playerExists(this)){
+      this.draw()
+    }
   }
 
 }

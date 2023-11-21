@@ -9,7 +9,12 @@ function setup() {
 
 function draw() {
   background(220);
-  players.forEach(player => player.update());
+  //players.forEach(player => player.update());
+  for(var i =0; i < players.length; i++){
+    if(playerExists(players[i])){
+      players[i].update();
+    }
+  }
 }
 
 function updatePlayers(serverPlayers) {
