@@ -26,7 +26,6 @@ function updatePlayers(serverPlayers) {
     let playerFromServer = serverPlayers[i];
     if (!playerExists(playerFromServer)) {
       players.push(new Player(playerFromServer));
-      players[i].update();
     }
   }
 }

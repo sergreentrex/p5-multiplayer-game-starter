@@ -12,6 +12,7 @@ class Player {
     circle(this.x, this.y, 20);
   }
   update(){
+    background(220)
     if(keyIsDown(87)){
       this.y--;
     }
