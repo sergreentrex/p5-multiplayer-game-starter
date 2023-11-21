@@ -9,7 +9,7 @@ function setup() {
 
 function draw() {
   background(220);
-  players.forEach(player => player.draw());
+  text(100,100,100);
   players.forEach(player => player.update());
 }
 
