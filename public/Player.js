@@ -9,7 +9,12 @@ class Player {
 
   draw() {
     fill(this.rgb.r, this.rgb.g, this.rgb.b);
-    circle(this.x, this.y, 20);
+    circle(this.x, this.y, 100);
+  }
+  update(){
+    if(keyIsDown(87)){
+      this.x++;
+    }
   }
 
 }

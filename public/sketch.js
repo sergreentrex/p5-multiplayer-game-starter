@@ -10,6 +10,7 @@ function setup() {
 function draw() {
   background(220);
   players.forEach(player => player.draw());
+  players.forEach(player => player.update());
 }
 
 function updatePlayers(serverPlayers) {
